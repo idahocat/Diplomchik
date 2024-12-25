@@ -11,7 +11,7 @@ test.describe('API challenge', () => {
     client = await ApiClient.login();
   });
 
-  test("Получить полный список челленджей GET /challenges @API", async ({}) => {
+  test("Получить полный  список челленджей GET /challenges @API", async ({}) => {
     await allure.step("Отправить запрос challenges", async () => {
     response = await client.challengesPage.getChallenges();
   });
