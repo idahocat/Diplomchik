@@ -30,7 +30,8 @@ module.exports = defineConfig({
     //baseURL: 'https://apichallenges.herokuapp.com',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     baseUrl: process.env.BASE_URL,
-
+    url: process.env.URL,
+    productUrl: process.env.PRODUCT_URL,
     ignoreHTTPSErrors: true,
     trace: 'on-first-retry',
   },

@@ -7,7 +7,7 @@ export class BasePage {
 
     async open(url) {
         await allure.step("Открыть главную страницу", async ({ page }) => {
-            await this.page.goto(url);
+            await this.page.goto(process.env.URL);
         });
     }
 }

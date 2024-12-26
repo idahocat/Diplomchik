@@ -2,8 +2,8 @@ import { test, expect } from '@playwright/test';
 import * as allure from "allure-js-commons";
 import {App} from '../src/pages_ui/app.page'
 
-const url = 'https://academybugs.com/find-bugs/';
-const productUrl = 'https://academybugs.com/store/flamingo-tshirt/';
+const url = process.env.URL;
+const productUrl = process.env.PRODUCT_URL;
 const mistakeFrame = 'In this bug';
 const mistakeAlarm = 'What did you find out';
 const mistakeText = 'You found a crash bug';
